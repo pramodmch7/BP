@@ -1,0 +1,181 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="./BPUI.css">
+    <title>Black Panthers</title>
+</head>
+<style>
+@import url('https://fonts.googleapis.com/css?family=Chewy&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Oleo+Script&display=swap');
+body,h1,h2,h3,h4,h5,h6,p,a,div,span,table,tbody,td,th,thead,tr{
+	margin: 0px;
+	padding: 0px;
+	text-decoration: none;
+	box-sizing: broder-box;
+}
+
+.MAIN{
+	width: 95%;
+	height: auto;
+	border: 2px solid black;
+	margin: 5px auto;
+	padding: 2px;
+	border-radius: 16px;
+    padding-top: 5px;
+    animation: shco 16s infinite;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    background-image: url(./A/WB.jpg);
+    background-size: 100%;
+}
+
+.B{
+    width: 90%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+
+.BP{
+    margin-top: 150px;
+    text-align: center;
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.BPI{
+    border-radius: 50%;
+}
+.BPT{
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Chewy', cursive;
+    margin-left: auto;
+    margin-left: auto;
+    color: white;
+}
+
+.IN{
+    width: 30%;
+    height: auto;
+    border: 1px solid black;
+    display: inline-block;
+    margin-top: 3%;
+    margin-left: 0.5%;
+    margin-right: 0.5%;
+    vertical-align: top;
+    border-radius: 10px;
+    -webkit-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.75);
+    transition: all;
+    transition-duration: 1.2s;
+}
+
+.IN:hover{
+    -webkit-box-shadow: 0px 0px 61px 7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 61px 7px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 61px 7px rgba(0,0,0,0.75);
+    transform: translateY(-7px);
+    transition-timing-function: cubic-bezier(0,.98,.98,-0.69);
+    
+}
+
+.NT{
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    font-family: 'Oleo Script', cursive; 
+    color: white;
+}
+
+.IN > img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+@keyframes shco {
+    0%{     
+        -webkit-box-shadow: 0px 0px 25px 2px rgba(0,0,0,1);
+        -moz-box-shadow: 0px 0px 25px 2px rgba(0,0,0,1);
+        box-shadow: 0px 0px 25px 2px rgba(0,0,0,1);
+    }
+    16%{
+        -webkit-box-shadow: 0px 0px 25px 2px rgba(186, 0, 0, 1);
+        -moz-box-shadow: 0px 0px 25px 2px rgba(186, 0, 0, 1);
+        box-shadow: 0px 0px 25px 2px rgba(186, 0, 0, 1);
+    }
+    32%{
+        -webkit-box-shadow: 0px 0px 25px 2px rgba(25, 186, 0, 1);
+        -moz-box-shadow: 0px 0px 25px 2px rgba(25, 186, 0, 1);
+        box-shadow: 0px 0px 25px 2px rgba(25, 186, 0, 1);
+    }
+    48%{
+        -webkit-box-shadow: 0px 0px 25px 2px rgba(0, 25, 186, 1);
+        -moz-box-shadow: 0px 0px 25px 2px rgba(0, 25, 186, 1);
+        box-shadow: 0px 0px 25px 2px rgba(0, 25, 186, 1);
+    }
+    64%{
+        -webkit-box-shadow: 0px 0px 25px 2px rgba(127, 0, 186, 1);
+        -moz-box-shadow: 0px 0px 25px 2px rgba(127, 0, 186, 1);
+        box-shadow: 0px 0px 25px 2px rgba(127, 0, 186, 1);
+    }
+    78%{
+        -webkit-box-shadow: 0px 0px 25px 2px rgba(0, 152, 186, 1);
+        -moz-box-shadow: 0px 0px 25px 2px rgba(0, 152, 186, 1);
+        box-shadow: 0px 0px 25px 2px rgba(0, 152, 186, 1);
+    }
+    84%{
+        -webkit-box-shadow: 0px 0px 25px 2px rgba(186, 121, 0, 1);
+        -moz-box-shadow: 0px 0px 25px 2px rgba(186, 121, 0, 1);
+        box-shadow: 0px 0px 25px 2px rgba(186, 121, 0, 1);
+    }
+    100%{
+        -webkit-box-shadow: 0px 0px 25px 2px rgba(183, 186, 0, 1);
+        -moz-box-shadow: 0px 0px 25px 2px rgba(183, 186, 0, 1);
+        box-shadow: 0px 0px 25px 2px rgba(183, 186, 0, 1);
+    }
+}
+</style>
+<body>
+    <div class="MAIN" id="main">
+        <div class="BP" id="bp" onclick="BP()">
+            <img class="BPI"src="./A/50.jpg" alt="">
+        </div>
+        <span class="BPT"><h3 id="pt">Black Panthers</h3></span>
+        <div class="B" id="b">
+        </div>
+    </div>
+</body>
+<script>
+    var Name = ['Sowmya','Raj','Loki','Pankaj','Pavan','Rahul','Shilpa','Neelufar','Prathiksha','Madhu','Pramod']
+    var B = document.getElementById('b');
+    var T = 11;
+    for (i=0;i<T;i++){
+        B.innerHTML += '<div class="IN" id="i'+(i+1)+'"><img src="./A/'+(i+1)+'.jpg"/><span class="NT">'+Name[i]+'</span>'+'</div>';
+    }
+    var BPC = document.getElementById('bp');
+    var BPI = document.querySelector('.BPI');
+    var BPT = document.querySelector('.BPT');
+    var PT = document.querySelector('#pt');
+    var B = document.querySelector('.')
+    function BP(){
+        BPC.style.width = '100px'
+        BPC.style.height = '100px'
+        BPC.style.marginTop = '10px'
+        BPI.style.width = '100px'
+        BPC.style.display = 'inline-block'
+        BPI.style.display = 'inline-block'
+        BPT.style.fontSize = '1.5em'
+        PT.style.display = 'inline-block'
+        B.style.display = 'block'
+        BPC.style.transition = 'all 50ms'
+    }
+
+</script>
+</html>
